@@ -7,8 +7,9 @@ import           Hakyll
 
 import qualified Data.ByteString.Lazy.Char8 as C
 --------------------------------------------------------------------------------
+
 main :: IO ()
-main = hakyll $ do
+main = hakyllWith siteConfig $ do
     match "static/img/*" $ do
         route   idRoute
         compile copyFileCompiler
@@ -71,6 +72,15 @@ main = hakyll $ do
                 >>= loadAndApplyTemplate "templates/404.html" notFoundCtx
                 >>= loadAndApplyTemplate "templates/default.html" notFoundCtx
 
+
+-- Hakyll config ---------------------------------------------------------------
+
+siteConfig :: Configuration
+siteConfig = defaultConfiguration
+             { deployCommand = "rsync -av _site/ www@wilkes:/srv/www/mpster.nl/" }
+
+
+-- Images ----------------------------------------------------------------------
 
 imageCtx :: Context ()
 imageCtx = mconcat
