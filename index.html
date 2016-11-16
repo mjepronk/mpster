@@ -1,0 +1,155 @@
+---
+title: Home
+---
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <h1 class="brand"><a href="#magalipenduccio">mp&nbsp;<span>&#9734;</span></a></h1>
+    </div>
+  </div>
+
+  <!-- (mes) petites dames -->
+  <div class="row">
+    <div class="col-lg-12">
+      <h2><a id="mespetitesdames" class="target">(mes) petites dames</a></h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-6">
+      <p>In oktober 2013 ben ik begonnen als vrijwilligster bij de
+        Werf. Toen ik de dames van de Regenboog ontmoette, had ik niet
+        verwacht in hoeverre zij een belangrijk onderdeel van mijn
+        leven zouden worden. Een begin van een mooi verhaal.</p>
+
+      <p>Nu drie keer per week lunchen wij samen, doen wij yoga,
+        genieten wij van de zon in de tuin, bakken wij chocolade
+        taart, knutselen wij, dansen, zingen, lachen wij... kortom:
+        leven wij. In de loop van de maanden is een teder, warme,
+        respectvolle relatie tussen ons gegroeid.</p>
+
+      <p>Dit heeft geleid tot mijn poging om een visuele vorm te geven
+        aan wat zij mij elke dag weer laten zien van zichzelf. Hun
+        bijzondere karaktertrekken, hun manier om te bewegen, hun
+        relatie met elkaar, hun verhalen...</p>
+    </div>
+    <div class="col-lg-6">
+      <div id="gallery">
+        <div style="overflow: hidden; height: 400px">
+        $for(images)$
+        <a title="" href="$normal$" data-gallery>
+          <img src="$thumbnail$" alt="">
+        </a>
+        $endfor$
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- magali penduccio -->
+  <div class="row">
+    <div class="col-lg-12">
+      <h2><a id="magalipenduccio" class="target">magali penduccio</a></h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-6">
+      <p>Magali Penduccio, geboren in 1973 te Voiron (Frankrijk) woont
+        in Amsterdam. Met haar kunst wil zij hedendaagse situaties,
+        cultuur, en psycho-sociale tegenstrijdigheden een visuele vorm
+        geven.</p>
+
+      <p>Haar werk bestaat meestal uit driedimensionale volumes
+        gemaakt van eenvoudige materialen zoals papier, karton, wol.
+        Daarnaast maakt zij ook tekeningen en heeft zij voor een
+        aantal latere projecten het medium fotografie verkent.</p>
+    </div>
+    <div class="col-lg-6">
+      <ul class="list-unstyled">
+        <li>2014 / (mes) petites dames, de werf, amsterdam</li>
+        <li>2010 / jij ik (wij) arbeid, meneer de wit, amsterdam</li>
+        <li>2010 / toi moi (nous) travail, le sémaphore, nîmes</li>
+        <li>2004 / artist-in-residence kunststichting <i>pro arte</i>, ulm</li>
+        <li>2003 / co-oprichter van de organisatie mekano, nîmes</li>
+        <li>2003 / kunst collezione a. stern & v. baldi #3, mka, nîmes</li>
+        <li>2002 / co fondatrice de la molécule eka, nîmes</li>
+        <li>2002 / what about love boat?, artelinea, hôtel des consuls, uzès</li>
+        <li>2000 / camping 2000, belvédère saint-romain, romans</li>
+        <li>2000 / galerie le linéaire, romans</li>
+        <li>1999 / association de malfaiteurs, art 3, valence</li>
+        <li>1998 / junge kunst aus frankreich, museum biberach</li>
+        <li>1997 / 13bis, rue bouffier, valence</li>
+        <li>1992-1997 / école régionale des beaux-arts, valence</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- contact -->
+  <div class="row">
+    <div class="col-lg-12">
+      <h2>volgen / follow / suivre</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-6">
+      <p>
+	Bent u geïnteresseerd in het werk van Magali Penduccio? Laat
+        een bericht achter in het formulier hiernaast en wij zetten
+        u op de mailinglijst.
+      </p>
+
+    </div>
+    <div class="col-lg-6">
+      <form role="form" method="post" action="/cgi-bin/contact.py">
+        <div class="form-group">
+	  <input type="email" name="email" class="form-control" placeholder="email@domain.com">
+        </div>
+        <div class="form-group">
+          <textarea name="message" class="form-control" placeholder="bericht / message"></textarea>
+        </div>
+        <div class="form-group">
+	  <button class="btn btn-default expand" type="submit">verzenden / send / envoyer</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <footer class="text-muted">
+    <p>copyright &copy; 2014-<script>document.write(new Date().getFullYear())</script>, magali penduccio</p>
+    <p>website by <a href="http://www.masida.nl">masida</a></p>
+  </footer>
+</div>
+
+<div id="blueimp-gallery" class="blueimp-gallery" data-use-bootstrap-modal="false">>
+  <!-- The container for the modal slides -->
+  <div class="slides"></div>
+  <!-- Controls for the borderless lightbox -->
+  <h3 class="title"></h3>
+  <a class="prev">‹</a>
+  <a class="next">›</a>
+  <a class="close">×</a>
+  <a class="play-pause"></a>
+  <ol class="indicator"></ol>
+  <!-- The modal dialog, which will be used to wrap the lightbox content -->
+  <div class="modal fade">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" aria-hidden="true">&times;</button>
+          <h4 class="modal-title"></h4>
+        </div>
+        <div class="modal-body next"></div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default pull-left prev">
+            <i class="glyphicon glyphicon-chevron-left"></i>
+            Vorige
+          </button>
+          <button type="button" class="btn btn-primary next">
+            Volgende
+            <i class="glyphicon glyphicon-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
